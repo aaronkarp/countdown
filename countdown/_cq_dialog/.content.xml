@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Countdown"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+          <basic
+              jcr:primaryType="nt:unstructured"
+              jcr:title="Basic"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              margin="{Boolean}true">
+            <items jcr:primaryType="nt:unstructured">
+              <columns
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                  margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                  <column
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                      <endDate
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                          name="./endDate"
+                          required="{Boolean}true"
+                          type="datetime"
+                          fieldLabel="End Date/Time"
+                          displayedFormat="MM/DD/YYYY HH:mm"
+                          valueFormat="YYYY-MM-DD[T]HH:mm:ss.SSSZ"
+                          displayTimezoneMessage="{Boolean}true"/>
+                      <endDateInstructions
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/text"
+                          granite:class="dialog-instructions"
+                          text="Enter the End Date/Time as US Eastern Time."/>
+                      <countdownColor
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                          showDefaultColors="{Boolean}false"
+                          granite:class="custom-color-select"
+                          fieldLabel="Color"
+                          name="./countdownColor">
+                        <items jcr:primaryType="nt:unstructured">
+                          <color1 jcr:primaryType="nt:unstructured" value="#003057"/>
+                          <color2 jcr:primaryType="nt:unstructured" value="#00A9E0"/>
+                          <color3 jcr:primaryType="nt:unstructured" value="#00BF6F"/>
+                          <color4 jcr:primaryType="nt:unstructured" value="#1A73E8"/>
+                          <color5 jcr:primaryType="nt:unstructured" value="#444444"/>
+                          <color6 jcr:primaryType="nt:unstructured" value="#660099"/>
+                          <color7 jcr:primaryType="nt:unstructured" value="#66B20E"/>
+                          <color8 jcr:primaryType="nt:unstructured" value="#66CBEC"/>
+                          <color9 jcr:primaryType="nt:unstructured" value="#68686C"/>
+                          <color10 jcr:primaryType="nt:unstructured" value="#777777"/>
+                          <color11 jcr:primaryType="nt:unstructured" value="#79C151"/>
+                          <color12 jcr:primaryType="nt:unstructured" value="#CCCCCC"/>
+                          <color13 jcr:primaryType="nt:unstructured" value="#CCDC00"/>
+                          <color14 jcr:primaryType="nt:unstructured" value="#CCEEF9"/>
+                          <color15 jcr:primaryType="nt:unstructured" value="#DD172B"/>
+                          <color16 jcr:primaryType="nt:unstructured" value="#EA0029"/>
+                          <color17 jcr:primaryType="nt:unstructured" value="#EBEBEB"/>
+                          <color18 jcr:primaryType="nt:unstructured" value="#EE3124"/>
+                          <color19 jcr:primaryType="nt:unstructured" value="#F7C90B"/>
+                          <color20 jcr:primaryType="nt:unstructured" value="#FAFAFA"/>
+                          <color21 jcr:primaryType="nt:unstructured" value="#FBFBFB"/>
+                          <color22 jcr:primaryType="nt:unstructured" value="#FCD428"/>
+                          <color23 jcr:primaryType="nt:unstructured" value="#FFFFFF"/>
+                          <color24 jcr:primaryType="nt:unstructured" value="#005ECF"/>
+                          <color25 jcr:primaryType="nt:unstructured" value="#1D1D1D"/>
+                          <color26 jcr:primaryType="nt:unstructured" value="#35C0ED"/>
+                        </items>
+                      </countdownColor>
+                      <fontFamily
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          fieldLabel="Font"
+                          name="./fontFamily">
+                        <items jcr:primaryType="nt:unstructured">
+                          <Oshkosh-ChelseaSans
+                              jcr:primaryType="nt:unstructured"
+                              text="Oshkosh-ChelseaSans"
+                              value="OKBG-Chelsea-Sans-Bold"/>
+                          <Carters-SourceSans
+                              jcr:primaryType="nt:unstructured"
+                              text="Carters-SourceSans"
+                              value="Source-Sans-Pro-Bold"/>
+                          <Skiphop-OpenSans
+                              jcr:primaryType="nt:unstructured"
+                              text="Skiphop-OpenSans"
+                              value="Open-Sans-Bold"/>
+                          <Canada-SourceSans-Pro
+                              jcr:primaryType="nt:unstructured"
+                              text="Canada-SourceSans-Pro"
+                              value="SourceSans-Pro"/>
+                        </items>
+                      </fontFamily>
+                      <units
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                          <heading
+                              granite:class="coral-Heading coral-Heading--4"
+                              jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/heading"
+                              level="{Long}4"
+                              text="Units to Display"/>
+                          <well
+                              jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/well">
+                            <items jcr:primaryType="nt:unstructured">
+                              <unitsInstructions
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/text"
+                                  granite:class="dialog-instructions"
+                                  text="Check boxes below to display specific units in your countdown."/>
+                              <unitsDay
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                  text="Days"
+                                  name="./unitsDay"
+                                  value="{Boolean}true"
+                                  uncheckedValue="{Boolean}false"
+                                  checked="{Boolean}false"
+                                  granite:class="formfield-singlerow"/>
+                              <unitsHour
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                  text="Hours"
+                                  name="./unitsHour"
+                                  value="{Boolean}true"
+                                  uncheckedValue="{Boolean}false"
+                                  checked="{Boolean}true"
+                                  granite:class="formfield-singlerow"/>
+                              <unitsMinute
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                  text="Minutes"
+                                  name="./unitsMinute"
+                                  value="{Boolean}true"
+                                  uncheckedValue="{Boolean}false"
+                                  checked="{Boolean}true"
+                                  granite:class="formfield-singlerow"/>
+                              <unitsSecond
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                  text="Seconds"
+                                  name="./unitsSecond"
+                                  value="{Boolean}true"
+                                  uncheckedValue="{Boolean}false"
+                                  checked="{Boolean}true"
+                                  granite:class="formfield-singlerow"/>
+                            </items>
+                          </well>
+                        </items>
+                      </units>
+                      <countdownId
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                          name="./countdownId"/>
+                      <endDateUnix
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                          name="./endDateUnix"/>
+                    </items>
+                  </column>
+                </items>
+              </columns>
+            </items>
+          </basic>
+          <advanced
+              jcr:primaryType="nt:unstructured"
+              jcr:title="Advanced"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              margin="{Boolean}true">
+            <items jcr:primaryType="nt:unstructured">
+              <columns
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                  margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                  <column
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                      <separator
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                          fieldLabel="Separator"
+                          name="./separator"
+                          value="|"
+                          fieldDescription="Enter a character that will appear between units in the countdown. Default is | (e.g. 04 hrs | 27 min | 32 sec)"/>
+                      <unitLabels
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                          <heading
+                              granite:class="coral-Heading coral-Heading--4"
+                              jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/heading"
+                              level="{Long}4"
+                              text="Unit Labels"/>
+                          <well
+                              jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/well"
+                              granite:class="form-4column">
+                            <items jcr:primaryType="nt:unstructured">
+                              <labelInstructions
+                                  jcr:primaryType="nt:unstructured"
+                                  granite:class="dialog-instructions"
+                                  sling:resourceType="granite/ui/components/coral/foundation/text"
+                                  text="Enter labels for units shown in the countdown."/>
+                              <labelInstructionsLine2
+                                  jcr:primaryType="nt:unstructured"
+                                  granite:class="dialog-instructions"
+                                  sling:resourceType="granite/ui/components/coral/foundation/text"
+                                  text="Defaults: Days = d, Hours = hrs, Minutes = min, Seconds = sec"/>
+                              <labelDay
+                                  granite:class="formfield-singlerow"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  fieldLabel="Days"
+                                  value="d"
+                                  name="./labelDay"/>
+                              <labelHour
+                                  granite:class="formfield-singlerow"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  fieldLabel="Hours"
+                                  value="hrs"
+                                  name="./labelHour"/>
+                              <labelMinute
+                                  granite:class="formfield-singlerow"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  fieldLabel="Minutes"
+                                  value="min"
+                                  name="./labelMinute"/>
+                              <labelSecond
+                                  granite:class="formfield-singlerow"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  fieldLabel="Seconds"
+                                  value="sec"
+                                  name="./labelSecond"/>
+                            </items>
+                          </well>
+                        </items>
+                      </unitLabels>
+                    </items>
+                  </column>
+                </items>
+              </columns>
+            </items>
+          </advanced>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

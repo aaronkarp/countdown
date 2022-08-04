@@ -1,0 +1,24 @@
+<!--/* countdown.html */-->
+<sly data-sly-use.countdown="${'com.carters.core.models.CountdownModel'}" />
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='carters.countdown'}"/>
+<div class="countdownComponent" id="${countdown.countdownId @ context='html'}"
+    data-enddate="${countdown.endDateUnix @ context='html'}"
+    data-color="${countdown.countdownColor @ context='html'}"
+    data-fontfamily="${countdown.fontFamily @ context='html'}"
+    data-unitsday="${countdown.unitsDay @ context='html'}"
+    data-unitshour="${countdown.unitsHour @ context='html'}"
+    data-unitsminute="${countdown.unitsMinute @ context='html'}"
+    data-unitssecond="${countdown.unitsSecond @ context='html'}"
+    data-countdownid="${countdown.countdownId @ context='html'}"
+    data-separator="${countdown.separator @ context='html'}"
+    data-labelday="${countdown.labelDay @ context='html'}"
+    data-labelhour="${countdown.labelHour @ context='html'}"
+    data-labelminute="${countdown.labelMinute @ context='html'}"
+    data-labelsecond="${countdown.labelSecond @ context='html'}">
+    00 | 00 | 00
+</div>
+<sly data-sly-call="${clientlib.js @ categories='carters.countdown'}"/>
+<script type="text/javascript">
+countdownStart();
+</script>

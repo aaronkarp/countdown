@@ -1,0 +1,40 @@
+.countdownComponent {
+  text-align: center;
+  width: 100%;
+  font-variant-numeric: lining-nums;
+  font-size: 8vw;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.timerText {
+  font-size: 0.5em;
+}
+
+.countdown-OKBG-Chelsea-Sans-Bold {
+  font-family: OKBG-Chelsea-Sans-Bold, sans-serif;
+}
+
+.countdown-Source-Sans-Pro-Bold {
+  font-family: Source-Sans-Pro-Bold, sans-serif;
+}
+
+.countdown-Open-Sans-Bold {
+  font-family: Open-Sans-Bold, sans-serif;
+}
+
+.countdown-SourceSans-Pro {
+  font-family: SourceSans-Pro, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .countdownComponent {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .countdownComponent {
+    font-size: 40px !important;
+  }
+}
